@@ -37,15 +37,15 @@ var parseUnix = function(date){
 
 app.get("/:date", function(req,res){
     var theDate = null;
-    
-     if (req.params.date.match(/[0-9]/)){
-    
-         theDate = parseUnix(req.params.date);
+    console.log(req.params.date.substring(0,3));
+     if (req.params.date.substring(0,3).match(/[a-zA-Z]/g)){
+        console.log("Natural: "+req.params.date);
+         theDate = parseNatural(req.params.date);
          
      }
      else {
-         
-        theDate = parseNatural(req.params.date);
+         console.log("PARSE UNIX: " +req.params.date);
+        theDate = parseUnix(req.params.date);
         
      }
      res.send(theDate);
