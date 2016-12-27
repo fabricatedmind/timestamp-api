@@ -21,7 +21,7 @@ var parseDate = function(date){
 //app.use(parseDate);
 
 app.get("/:date", function(req,res){
-     var dateString = req.params.date;
+     
      var theDate = parseDate(req.params.date);
      res.send(theDate);
 });
