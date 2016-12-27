@@ -2,8 +2,7 @@
   "name": "timestamp",
   "version": "1.0.0",
   "description": "blah",
-  "main": "server.js"
-  
+  "main": "server.js",
   },
   "author": "cc",
   "license": "MIT",
