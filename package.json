@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "blah",
   "main": "server.js",
-  },
   "author": "cc",
   "license": "MIT",
   "dependencies": {
