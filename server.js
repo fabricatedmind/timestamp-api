@@ -54,4 +54,4 @@ app.get("/:date", function(req,res){
 
 app.listen(process.env.PORT, function(){
    console.log("Starting"); 
-});
+}); 
