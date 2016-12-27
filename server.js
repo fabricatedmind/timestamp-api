@@ -38,6 +38,7 @@ var parseUnix = function(date){
 app.get("/:date", function(req,res){
     var theDate = null;
     console.log(req.params.date.substring(0,3));
+    
      if (req.params.date.substring(0,3).match(/[a-zA-Z]/g)){
         console.log("Natural: "+req.params.date);
          theDate = parseNatural(req.params.date);
@@ -51,7 +52,9 @@ app.get("/:date", function(req,res){
      res.send(theDate);
      
 });
-
+app.get("/", function(req, res){
+    res.send("Unix Timestamp or Date required");
+})
 app.listen(process.env.PORT, function(){
    console.log("Starting"); 
 }); 
