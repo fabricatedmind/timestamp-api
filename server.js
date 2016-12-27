@@ -52,6 +52,6 @@ app.get("/:date", function(req,res){
      
 });
 
-app.listen(8080, function(){
+app.listen(process.env.PORT, function(){
    console.log("Starting"); 
 });
